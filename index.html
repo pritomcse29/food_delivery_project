@@ -11,12 +11,260 @@
     <!--Bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--google fonts-->
+    <script src="https://kit.fontawesome.com/52f1852c13.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header>
+        <!--navbar-->
+        <nav class="navbar navbar-light bg-light ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" width="150" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">wowFood</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Foods</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <div style="background-image: url(images/bg.jpg); padding:150px;width:100%;">
+
+                <div class="container">
+                    <form class="d-flex justify-content-end  mt-5">
+                        <input class="form-control me-2 p-3 " style="width: 50%;" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-danger btn-outline-success p-3" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="container  mt-5 ps-5">
+            <h1 class="text-center mb-5">Explore Foods</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/pizza.jpg" class="card-img-top " alt="...">
+                        <p class="text-center">Pizza</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/burger.jpg" class="card-img-top" alt="...">
+                        <p class="text-center">Burger</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/momo.jpg" class="card-img-top" alt="...">
+                        <p class="text-center">Momo</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section style="background-color:#ECECEC;" class="mt-5">
+            <h1 class="text-center mb-5 pt-5">Food Menu</h1>
+
+            <div class="container p-5 mt-5">
+
+                <div class="row">
+                    <div class="class=col-12 col-lg-6 col-md-6">
+                        <div class="card mb-3 rounded " style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/menu-pizza.jpg" class="w-75 h-75  m-3 "
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Food Title</h5>
+                                        <p class="card-text">$2.3
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Made with Italian Sauce, Chicken,
+                                                and organice vegetables.</small>
+                                        </p>
+                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class=col-12 col-lg-6 col-md-6">
+                        <div class="card mb-3 rounded" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/menu-momo.jpg" class="w-75 h-75  m-3"
+                                        style="height: 197.6;width: 197.6;" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Food Title</h5>
+                                        <p class="card-text">$2.3
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Made with Italian Sauce, Chicken,
+                                                and organice vegetables.</small>
+                                        </p>
+                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="class=col-12 col-lg-6 col-md-6">
+                        <div class="card mb-3 rounded" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/menu-burger.jpg" class="w-75 h-75  m-3"
+                                        style="height: 197.6;width: 197.6;" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Food Title</h5>
+                                        <p class="card-text">$2.3
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Made with Italian Sauce, Chicken,
+                                                and organice vegetables.</small>
+                                        </p>
+                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class=col-12 col-lg-6 col-md-6">
+                        <div class="card mb-3 rounde" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/menu-pizza.jpg" class="w-75 h-75  m-3"
+                                        style="height: 197.6;width: 197.6;" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Food Title</h5>
+                                        <p class="card-text">$2.3
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Made with Italian Sauce, Chicken,
+                                                and organice vegetables.</small>
+                                        </p>
+                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="card mb-3 rounded" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/menu-momo.jpg" class="w-75 h-75  m-3"
+                                        class="img-fluid rounded-start hei" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Food Title</h5>
+                                        <p class="card-text">$2.3
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Made with Italian Sauce, Chicken,
+                                                and organice vegetables.</small>
+                                        </p>
+                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="card mb-3 " style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/menu-burger.jpg" class="w-75 h-75  m-3"
+                                        style="height: 197.6;width: 197.6;" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body ">
+                                        <h5 class="card-title">Food Title</h5>
+                                        <p class="card-text">$2.3
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Made with Italian Sauce, Chicken,
+                                                and organice vegetables.</small>
+                                        </p>
+                                        <button type="button" class="btn btn-danger">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h1 class="text-center p-5">See All Foods</h1>
+        </section>
+    </main>
+    <footer>
+        <!--icon-->
+        <div class="d-flex justify-content-center mt-5">
+            <img src="images/facebook.png" style="height: 45px; width: 50px;">
+            <img src="images/instagram.png" style="height: 45px; width: 70px;padding-left: 30px;">
+            <img src="images/twitter.png" style="height: 45px; width: 70px;padding-left: 30px;">
+        </div>
+        <p class="text-center mt-4 mb-5">All rights reserved. Designed By Pritom Sarkar</p>
+    </footer>
     <!--Script link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
 </body>
