@@ -40,27 +40,30 @@
                                 <a class="nav-link active" aria-current="page" href="#"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="#"><span style="color:#FF4757;">Home</span></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Categories
+                                    <span style="color:#FF4757;">Categories</span>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#"><span style="color:#FF4757;">Food</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><span style="color:#FF4757;">Food</span></a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#"><span style="color:#FF4757;">Something else
+                                                here</span></a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Foods</a>
+                                <a class="nav-link" href="#"><span style="color:#FF4757;">Foods</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#"><span style="color:#FF4757;">Contact</span></a>
                             </li>
                         </ul>
 
@@ -76,14 +79,14 @@
 
                 <div class="container">
                     <form class="d-flex justify-content-end  mt-5">
-                        <input class="form-control me-2 p-3 " style="width: 50%;" type="search" placeholder="Search"
+                        <input class="form-control me-1 p-3 " style="width: 50%;" type="search" placeholder="Search"
                             aria-label="Search">
-                        <button class="btn btn-danger btn-outline-success p-3" type="submit">Search</button>
+                        <button class="btn btn-danger btn-outline-success " type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </section>
-        <section class="container  mt-5 ps-5">
+        <section class="container  mt-5 ps-5 pe-5">
             <h1 class="text-center mb-5">Explore Foods</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4 ">
                 <div class="col">
@@ -253,15 +256,105 @@
             </div>
             <h1 class="text-center p-5">See All Foods</h1>
         </section>
+        <!-- <section class="Flexible-part">
+            <div class="third-part  Flexible-part">
+                <span>
+                    <h1>700k</h1>
+                    <p>youtube subscriber</p>
+                </span>
+                <span>
+                    <h1>2.4 m</h1>
+                    <p>Instagram Followers</p>
+                </span>
+                <span>
+                    <h1>100k</h1>
+                    <p>Dribble shot like</p>
+                </span>
+            </div>
+        </section> -->
+        <!-- <section>
+            <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+            <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+            <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+            <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+        </section> -->
     </main>
     <footer>
+
+        <div class="d-grid gap-2 col-4 mx-auto m-5">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Booking Information
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/bg.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bg.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bg.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <!--icon-->
+
         <div class="d-flex justify-content-center mt-5">
             <img src="images/facebook.png" style="height: 45px; width: 50px;">
             <img src="images/instagram.png" style="height: 45px; width: 70px;padding-left: 30px;">
             <img src="images/twitter.png" style="height: 45px; width: 70px;padding-left: 30px;">
         </div>
-        <p class="text-center mt-4 mb-5">All rights reserved. Designed By Pritom Sarkar</p>
+        <p class="text-center mt-4 mb-5 ">All rights reserved. Designed By Pritom Sarkar
+
+        </p>
+
+        <!-- <button type="button" class="btn btn-danger d-flex justify-content-end">  </button> -->
+        <!--  -->
+
+
     </footer>
     <!--Script link -->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
